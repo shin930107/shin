@@ -7,22 +7,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>신설화 | 포트폴리오</title>
 
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+  <script src="js/script.js"></script>
   <script>
     document.documentElement.classList.remove('no-js');
     document.documentElement.classList.add('js');
   </script>
-  <script src="js/script.js"></script>
+
   <!-- CSS
   ================================================== -->
   <link rel="stylesheet" href="css/vendor.css">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+
+
 
   <!-- favicons
   ================================================== -->
-  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" sizes="192x192" href="favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
 </head>
 
 
@@ -64,10 +71,10 @@
           <nav class="s-header__nav">
 
               <ul class="s-header__menu-links">
-                  <li><a href="about.html">About</a></li>
-                  <li><a href="services.html">Portfolio</a></li>
-                  <li><a href="blog.html">ddd</a></li>
-                  <li><a href="contact.html">Contact</a></li>
+                  <li class="on"><a href="#about">About</a></li>
+                  <li><a href="#expertise">Portfolio</a></li>
+                  <li><a href="#expertise">ddd</a></li>
+                  <li><a href="#cta">Contact</a></li>
               </ul> <!-- s-header__menu-links -->
 
           </nav> <!-- end s-header__nav -->
@@ -99,7 +106,7 @@
 
                     <div class="s-intro__content-media"> 
                         <div class="s-intro__content-media-inner">                               
-                            <img src="images/self.jpg" srcset="images/self.jpg 1x, images/intro-bg@2x.jpg 2x" alt="">
+                            <img src="images/self.jpg" srcset="images/self.jpg 1x" alt="">
                             <div class="lines">                               
                                 <span></span>                                  
                             </div>
@@ -328,50 +335,78 @@
                     <div class="section-header grid-section-split__header">
                         <div class="text-pretitle">Portfolio</div>                           
                         <h2 class="text-display-title">
-                        WEB site<br>
-                        UI/UX
+                        WEB
                         </h2>
                     </div> <!-- end section-header -->
 
                     <div class="s-expertise__content-main grid-section-split__primary">
-                      <div class="clients-list">                            
-                        <div class="clients-list__item">
-                            <a href="#0">
-                                <img src="images/ikeashowroom.png" alt="">
-                            </a>
+                      <div id="slider-div" class="clients-list">                     
+                        <div id="slide" class="clients-list__item">
+                            <p><strong>웹디자인</strong> | AMI COSMETIC</p>
+                            <a href="images/ami-cosmetic.pdf" target="_blank" class="link">기획서 보기 </a>
+                            <a href="https://ami-cosmetic.netlify.app" target="_blank" class="link">메인페이지 보기 </a>
+                            <a href="https://ami-cosmetic.netlify.app/about.html" target="_blank" class="link">서브페이지 보기 </a>
+                            <a href="#0"><span><img src="images/ami-cosmetic.png" alt=""></span></a>
                         </div>
-                        <div class="clients-list__item">
-                            <a href="#0">
-                                <img src="images/petner.png" alt="">
-                            </a>
+                        <div id="slide" class="clients-list__item">
+                              <p><strong>웹디자인</strong> | 새미네 부엌</p>
+                              <a href="images/semie-kitchen.pdf" target="_blank" class="link">기획서 보기 </a>
+                              <a href="#0" target="_blank" class="link">메인페이지 보기 </a>
+                              <a href="#0" target="_blank" class="link">서브페이지 보기 </a>
+                              <a href="#0"><span><img src="images/semie-kitchen.png" alt=""></span></a>
                         </div>
-                        <div class="clients-list__item">
-                            <a href="#0">
-                                <img src="images/hwahong.png" alt="">
-                            </a>
+                        <div id="slide" class="clients-list__item">
+                              <p><strong>메타버스 웹</strong> | IKEA Showroom</p>
+                              <a href="images/ikea-showroom.pdf" target="_blank" class="link">기획서 보기 </a>
+                              <a href="#0" target="_blank" class="link">메인페이지 보기 </a>
+                              <a href="#0" target="_blank" class="link">서브페이지 보기 </a>
+                              <a href="#0"><span><img src="images/ikeashowroom.png" alt=""></span></a>
                         </div>
-                        <div class="clients-list__item">
-                            <a href="#0">
-                                <img src="images/daeguro.png" alt="">
-                            </a>
+                        <div id="slide" class="clients-list__item">
+                              <p><strong>반응형 웹디자인</strong> | 화홍산업</p>
+                              <a href="images/hwahong.pdf" target="_blank" class="link">기획서 보기 </a>
+                              <a href="#0" target="_blank" class="link">메인페이지 보기 </a>
+                              <a href="#0" target="_blank" class="link">서브페이지 보기 </a>
+                              <a href="#0"><span><img src="images/hwahong.png" alt=""></span></a>
                         </div>
-                        <div class="clients-list__item">
-                            <a href="#0">
-                                <img src="images/ami-cosmetic.png" alt="">
-                            </a>
-                        </div>
-                        <div class="clients-list__item">
-                          <a href="#0">
-                              <img src="images/clients/proline.svg" alt="">
-                          </a>
-                      </div>
-                    </div> <!-- end clients-list -->
-
+                      </div> <!-- end clients-list -->
+                    </div>
                 </div> <!-- end grid-block-->
             </div> <!-- end s-expertise__content -->
 
-        </section> <!-- end s-expertise -->       
-    </section> <!-- s-content-->
+          <div class="row s-expertise__content width-sixteen-col part2">
+            <div class="column xl-12 grid-block grid-section-split">
+
+              <div class="section-header grid-section-split__header">
+                <h2 class="text-display-title">
+                UI/UX
+                  </h2>
+              </div> <!-- end section-header -->
+
+              <div class="s-expertise__content-main grid-section-split__primary">
+                <div class="clients-list">                            
+                  <div class="clients-list__item">
+                      <p><strong>가상 반려동물 앱</strong> | Petner</p>
+                      <a href="images/petner.pdf" target="_blank" class="link">기획서 보기 </a>
+                      <a href="#0" target="_blank" class="link">화면 보기 </a>
+                      <a href="#0">
+                      <span class="uiux"><img src="images/petner.png" alt=""></span>
+                    </a>
+                  </div>
+                  <div class="clients-list__item">
+                    <p><strong>배달 앱 디자인</strong> | 대구로</p>
+                    <a href="images/daeguro.pdf" target="_blank" class="link">기획서 보기 </a>
+                    <a href="#0" target="_blank" class="link">화면 보기 </a>
+                    <a href="#0">
+                      <span class="uiux"><img src="images/daeguro.png" alt=""></span>
+                  </a>
+                </div>
+              </div> <!-- end clients-list -->
+
+            </div> <!-- end grid-block-->
+          </div> <!-- end s-expertise__content -->
+
+      </section> <!-- end s-expertise -->   
 
     <!-- # cta
       ================================================== -->
@@ -386,7 +421,7 @@
                   </h2>
                   <p class="lead">
                     이럴 때 제가 어울릴 것 같아요<br><br>
-                    책임감 있고 함께 일할 때 시너지를 주는 팀원이 필요할 때<br>
+                    책임감 있고 함께 일하면 시너지를 주는 팀원이 필요할 때<br>
                     성장 후에도 겸손을 잃지 않는 사람이 필요할 때<br>
                     일을 즐기고 좋아하는 사람이 필요할 때
                   </p>
@@ -402,18 +437,19 @@
     <footer class="s-footer">
         <div class="row s-footer__content">
             <div class="column xl-6 lg-6 md-12 s-footer__block s-footer__about">                    
-                <h3>Shin seolhwa's Portfolio</h3>
-                <img src="images/me.png" alt="">          
+                <h3>Contact</h3>
+                <p>
+                  010.8687.0107<br>
+                  shin930107@naver.com
+                </p>        
             </div>                
             <div class="column xl-3 lg-6 md-12 s-footer__block s-footer__site-links">
                 <h3>Site Links</h3>
                 <ul class="link-list">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="blog.html">Journal</a></li>
-                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">About</a></li>
+                    <li><a href="blog.html">Portfolio</a></li>
                     <li><a href="contact.html">Contact</a></li>
-                    <li><a href="https://www.dreamhost.com/r.cgi?287326">DreamHost</a></li>
                 </ul>
             </div>
         </div>    
@@ -441,6 +477,5 @@
   ================================================== -->
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
-
 </body>
 </html>
