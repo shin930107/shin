@@ -1,86 +1,6 @@
 @charset "UTF-8";
-/* =================================================================== 
- * Monica Main Stylesheet
- * Template Ver. 1.0.0
- * 12-13-2022
- * ------------------------------------------------------------------
- *
- * TOC:
- * # SETTINGS
- *		## fonts
- *    	## colors
- *	  	## spacing and typescale
- *		## grid variables
- * # CSS RESET
- * # GRID
- *		## extra large devices
- *		## large devices
- *		## medium devices 
- *		## tablet devices
- *		## mobile devices
- *		## small mobile devices
- *		## additional column stackpoints 
- * # BASE SETUP
- * # UTILITY CLASSES
- * # TYPOGRAPHY 
- *		## additional typography & helper classes
- *		## lists
- *		## media 
- *		## spacing
- * # PRELOADER
- *		## page loaded
- * # FORM 
- *		## style placeholder text
- *		## change autocomplete styles in Chrome
- * # BUTTONS
- * # TABLE
- * # COMPONENTS
- *		## pagination 
- *		## alert box 
- *		## skillbars
- *		## stats tabs
- * # PROJECT-WIDE SHARED STYLES
- *		## list items
- *		## social list
- *		## blog card
- *		## testimonials
- *		## swiper overrides
- * # GRID-BASED LAYOUTS
- *		## grid block
- *		## list grid
- * # PAGE WRAP
- * # SITE HEADER
- *		## logo
- *		## main navigation
- *		## mobile menu toggle
- * # PAGEHEADER & PAGECONTENT
- * # INTRO
- *		## intro content
- *		## intro scroll down
- *		## intro transitions
- * # ABOUT
- * # EXPERTISE
- * # CLIENTS
- *		## clients list
- * # CTA
- * # JOURNAL
- * # FOOTER
- *		## newsletter
- *		## copyright
- *		## go top
- * # BLOG STYLES 
- * # PAGE STYLES 
- *		## services page
- *		## contact page
- *
- * ------------------------------------------------------------------ */
-
-
 /* ===================================================================
  * # SETTINGS
- *
- *
- * ------------------------------------------------------------------- */
 
 /* ------------------------------------------------------------------- 
  * ## fonts 
@@ -341,98 +261,14 @@
 	}
 }
 
-
-
 /* ====================================================================
  * # CSS RESET
- *
- *
- * --------------------------------------------------------------------
- * http://meyerweb.com/eric/tools/css/reset/ 
- * v2.0 | 20110126
- * License: none (public domain)
  * -------------------------------------------------------------------- */
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,
+address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,
+b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,
+tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,
+nav,output,ruby,section,summary,time,mark,audio,video {
 	margin        : 0;
 	padding       : 0;
 	border        : 0;
@@ -442,34 +278,13 @@ video {
 }
 
 /* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
 	display: block;
 }
-
-body {
-	line-height: 1;
-}
-
+body {line-height: 1;}
 ol,
-ul {
-	list-style: none;
-}
-
-blockquote,
-q {
-	quotes: none;
-}
-
+ul {list-style: none;}
+blockquote,q {quotes: none;}
 blockquote:before,
 blockquote:after,
 q:before,
@@ -477,33 +292,16 @@ q:after {
 	content: "";
 	content: none;
 }
-
 table {
 	border-collapse: collapse;
 	border-spacing : 0;
 }
 
-
 /* ===================================================================
  * # GRID v5.0.0
- *
- *
- * -------------------------------------------------------------------
- * - Grid system based on the flex display property.
- *
- * - Grid breakpoints are based on MAXIMUM WIDTH media queries, 
- *   meaning they apply to that one breakpoint and ALL THOSE BELOW IT.
- *
- * - Grid columns without a specified width will automatically layout 
- *   as equal width columns.
- *
- * - On viewports 400px and below, all grid columns will stacked 
- *   vertically
- *
  * ------------------------------------------------------------------- */
 
-/* row 
- */
+/* row */
 .row {
 	display  : flex;
 	flex-flow: row wrap;
@@ -517,8 +315,7 @@ table {
 	margin-right: calc(var(--gutter) * -1);
 }
 
-/* column
- */
+/* column */
 .column {
 	flex   : 1;
 	padding: 0 var(--gutter);
@@ -4125,7 +3922,7 @@ stroke-dashoffset:0
 	margin-top : var(--vspace-1);
 }
 .s-expertise__content-main {
-	margin-top: var(--vspace-1_5);
+	/* margin-top: var(--vspace-1_5); */
 }
 .s-expertise .text-display-title {
 	margin-top: var(--vspace-1);
@@ -4199,8 +3996,9 @@ stroke-dashoffset:0
 
 .clients-list__item .link:focus,
 .clients-list__item .link:hover {
-	background-color: var(--color-white);
-	color: var(--color-text-dark);
+	background-color: var(--color-info-content);
+	color: var(--color-white);
+	border: 1px solid var(--color-info-content);
 }
 .clients-list__item input[type=button] {
 	height: calc(var(--btn-height) - 4px);;
@@ -4213,11 +4011,13 @@ stroke-dashoffset:0
 	display: inline-block;
 	color: var(--color-text-dark);
 	height: calc(var(--btn-height) - 4px);
-	background-color: var(--color-info-content);
-	padding: 10px 20px;
-	border-radius: 10px;
+	background-color: var(--color-white);
+	padding: 1px 20px;
+	border: 1px solid var(--color-text-dark);
+	border-radius: 4px;
 	margin-top: var(--vspace-1);
-	color: var(--color-white);
+	font-size: var(--text-xs);
+	color: var(--color-text-dark);
 }
 .clients-list__item .link:not(:first-of-type) {
 	margin-left: var(--vspace-0_5);
@@ -4277,7 +4077,72 @@ stroke-dashoffset:0
 	}
 }
 
+.s-portfolio .grid-section-split__header {
+	grid-column: 1/span 4;
+	grid-row: 1/2;
+	align-self: start;
+}
+.s-portfolio {
+	background-color: var(--color-white);
+	padding-bottom: var(--vspace-5);
+}
 
+.s-portfolio h3 {
+	margin-top: 0;
+}
+
+.s-portfolio__header {
+	text-align: center;
+}
+
+/* ------------------------------------------------------------------- 
+* ## portfolio list
+* ------------------------------------------------------------------- */
+.folio-list {
+	max-width: 1180px;
+	flex-wrap: wrap;
+}
+.folio-item {
+	width: calc(100%/3);
+	flex: 0 1 auto;
+}
+.folio-item__thumb {
+	display: block;
+	background-color: white;
+	position: relative;
+	overflow: hidden;
+}
+.folio-item__thumb .hover-text {
+	position: absolute;
+	top: 0; left: 0; right: 0; bottom: 0;
+	background-color: rgba(0, 0, 0, 0.8);
+	opacity: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	-webkit-transition: all, .4s;
+	transition: all, .4s;
+}
+.folio-item img {
+	display: block;
+	margin: 0;
+	-webkit-transition: all, .5s;
+	transition: all, .5s;
+}
+
+/* on hover =================================================================== */
+.folio-item:hover .folio-item__thumb .hover-text {
+	opacity: 1;
+	color: var(--color-white);
+	visibility: visible;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+.folio-item:hover .folio-item__thumb img {
+	-webkit-transform: scale(1.05);
+	transform: scale(1.05);
+}
 
 /* ===================================================================
  * # CTA
@@ -4314,64 +4179,6 @@ stroke-dashoffset:0
 		margin-right: 0;
 	}
 }
-
-
-
-/* ===================================================================
- * # JOURNAL
- *
- *
- * ------------------------------------------------------------------- */
-.s-journal {
-	padding-top     : var(--vspace-6);
-	padding-bottom  : var(--vspace-3);
-	background-color: #181818;
-	color           : rgba(255, 255, 255, 0.6);
-	border-bottom   : 1px solid rgba(255, 255, 255, 0.05);
-}
-
-.s-journal a {
-	color: var(--color-1);
-}
-
-.s-journal a:focus,
-.s-journal a:hover {
-	color: var(--color-3-dark);
-}
-
-.s-journal h3 a {
-	color: var(--color-3);
-}
-
-.s-journal h3 a:focus,
-.s-journal h3 a:hover {
-	color: var(--color-3);
-}
-
-.s-journal .section-header {
-	margin: 0 auto;
-}
-
-.s-journal .text-display-title,
-.s-journal h3 {
-	color: var(--color-3);
-}
-
-.s-journal .text-pretitle,
-.s-journal .text-display-title {
-	width : min(900px, 100%);
-	margin: 0 auto;
-}
-
-.s-journal .blog-card-title a {
-	color: var(--color-3);
-}
-
-.s-journal__content-main {
-	margin-top: var(--vspace-2);
-}
-
-
 
 /* ===================================================================
  * # FOOTER
@@ -4436,30 +4243,6 @@ stroke-dashoffset:0
 .s-footer .link-list a:focus,
 .s-footer .link-list a:hover {
 	color: var(--color-3);
-}
-
-/* ------------------------------------------------------------------- 
- * ## newsletter
- * ------------------------------------------------------------------- */
-.s-footer__newsletter input[type=email] {
-	margin-bottom   : var(--vspace-0_5);
-	background-color: var(--color-gray-18);
-}
-
-.s-footer__newsletter input[type=email]:focus {
-	color           : var(--color-3);
-	background-color: var(--color-gray-18);
-	box-shadow      : 0 0 5px var(--color-1-dark);
-	border          : 1px solid var(--color-1-darker);
-}
-
-.s-footer__newsletter .mc-status {
-	width      : 100%;
-	margin-top : var(--vspace-0_125);
-	font-size  : var(--text-sm);
-	font-weight: 400;
-	line-height: var(--vspace-0_75);
-	color      : var(--color-1);
 }
 
 /* ------------------------------------------------------------------- 
@@ -4576,303 +4359,4 @@ stroke-dashoffset:0
 		height: var(--vspace-0_75);
 		width : var(--vspace-0_75);
 	}
-}
-
-
-
-/* ===================================================================
- * # BLOG STYLES 
- *
- *
- * ------------------------------------------------------------------- */
-.entry__header {
-	--width-grid-max: min(90%, var(--width-narrower));
-}
-
-.entry__title {
-	margin-top : 0;
-	font-size  : clamp(5rem, 7vw, var(--text-display-3));
-	line-height: 1.1163;
-	color      : var(--color-3);
-}
-
-.entry__meta {
-	display        : flex;
-	flex-flow      : row wrap;
-	align-items    : center;
-	justify-content: center;
-	font-size      : calc(var(--text-size) * 0.9);
-	font-weight    : 300;
-	color          : rgba(255, 255, 255, 0.7);
-	margin-top     : var(--vspace-1);
-}
-
-.entry__meta a {
-	color: rgba(255, 255, 255, 0.7);
-}
-
-.entry__meta .cat-links a::after {
-	content: ", ";
-}
-
-.entry__meta .cat-links a:last-child::after {
-	display: none;
-}
-
-.entry__meta>[class*=entry__meta] {
-	display    : flex;
-	align-items: center;
-	margin     : 0 var(--vspace-0_75);
-}
-
-.entry__meta>[class*=entry__meta] svg {
-	margin-right: 0.4rem;
-	height      : var(--vspace-0_875);
-	width       : var(--vspace-0_875);
-}
-
-.entry__meta>[class*=entry__meta] svg path,
-.entry__meta>[class*=entry__meta] svg circle {
-	stroke: var(--color-1);
-}
-
-.entry__content {
-	padding-top: var(--vspace-3);
-}
-
-.entry__media {
-	margin-top   : var(--vspace-0_5);
-	margin-bottom: var(--vspace-2_5);
-}
-
-.entry__media .featured-image {
-	margin: 0;
-}
-
-.entry__media img {
-	vertical-align: bottom;
-}
-
-.entry__primary figure {
-	margin: var(--vspace-2) 0;
-}
-
-/* post navigation
- */
-.post-nav {
-	display      : flex;
-	margin-top   : var(--vspace-2_5);
-	padding      : var(--vspace-1_25) 0 var(--vspace-2);
-	border-top   : 1px solid var(--color-border);
-	border-bottom: 1px solid var(--color-border);
-	position     : relative;
-}
-
-.post-nav::before {
-	content         : "";
-	display         : block;
-	width           : 1px;
-	height          : 100%;
-	background-color: var(--color-border);
-	position        : absolute;
-	top             : 0;
-	left            : 50%;
-	bottom          : 0;
-}
-
-.post-nav__prev,
-.post-nav__next {
-	flex : none;
-	width: 50%;
-}
-
-.post-nav__prev {
-	padding-right: calc(var(--gutter) + 1.2rem);
-}
-
-.post-nav__next {
-	padding-left: calc(var(--gutter) + 1.2rem);
-	margin-left : auto;
-}
-
-.post-nav a {
-	font-family: var(--font-1);
-	font-size  : var(--text-md);
-	line-height: 1.1667;
-	color      : var(--color-text);
-}
-
-.post-nav span {
-	display      : block;
-	font-family  : var(--font-1);
-	font-weight  : 400;
-	font-size    : var(--text-sm);
-	line-height  : var(--vspace-1);
-	color        : var(--color-1);
-	margin-left  : 0.2rem;
-	margin-bottom: var(--vspace-0_25);
-}
-
-/* related post
- */
-.related-posts {
-	margin-top: var(--vspace-1_5);
-}
-
-.related-posts h4 {
-	font-family  : var(--font-1);
-	font-size    : var(--text-md);
-	margin-bottom: var(--vspace-1_25);
-}
-
-/* ------------------------------------------------------------------- 
- * responsive:
- * blog styles
- * ------------------------------------------------------------------- */
-@media screen and (max-width: 900px) {
-	.entry__media {
-		margin-top   : 0;
-		margin-bottom: var(--vspace-2);
-	}
-}
-
-@media screen and (max-width: 800px) {
-	.entry__header {
-		padding-top: var(--vspace-4_5);
-	}
-
-	.post-nav {
-		display   : block;
-		text-align: center;
-	}
-
-	.post-nav::before {
-		display: none;
-	}
-
-	.post-nav>div:first-child {
-		margin-bottom: var(--vspace-1);
-	}
-
-	.post-nav__prev,
-	.post-nav__next {
-		flex   : none;
-		width  : 100%;
-		padding: 0;
-	}
-}
-
-
-
-/* ===================================================================
- * # PAGE STYLES 
- *
- *
- * ------------------------------------------------------------------- */
-.pagemedia {
-	margin-bottom: var(--vspace-2_5);
-}
-
-.pagemedia figure,
-.pagemedia img {
-	margin-bottom: 0;
-}
-
-.pagemedia img {
-	vertical-align: bottom;
-}
-
-.pagemain .column:first-child>*:first-child {
-	margin-top: 0;
-}
-
-/* --------------------------------------------------------------------
- * ## services page
- * -------------------------------------------------------------------- */
-.list-services {
-	list-style : none;
-	font-size  : calc(var(--text-size) * 0.95);
-	font-weight: 400;
-	color      : var(--color-text-dark);
-	border-top : 1px dotted var(--color-border);
-	margin-top : calc(var(--vspace-0_25) * -1);
-	margin-left: 0;
-}
-
-.list-services li {
-	display      : block;
-	border-bottom: 1px dotted var(--color-border);
-	padding      : 0.6rem 0;
-	padding-left : 2.8rem;
-	position     : relative;
-}
-
-.list-services li::before {
-	content         : "";
-	display         : block;
-	height          : 6px;
-	width           : 6px;
-	background-color: var(--color-2);
-	border-radius   : 50%;
-	position        : absolute;
-	left            : 0.4rem;
-	top             : calc(0.8rem + var(--vspace-0_375));
-}
-
-/* --------------------------------------------------------------------
- * ## contact page
- * -------------------------------------------------------------------- */
-.contact-cta {
-	margin-bottom: var(--vspace-2);
-}
-
-.contact-btn {
-	display        : flex;
-	justify-content: center;
-	align-items    : center;
-}
-
-.contact-btn svg {
-	margin-right: 1rem;
-	height      : var(--vspace-0_75);
-	width       : var(--vspace-0_75);
-}
-
-.contact-btn svg path {
-	fill: var(--color-text);
-}
-
-.contact-block {
-	margin-bottom: var(--vspace-1_25);
-}
-
-.contact-block a {
-	color: var(--color-text);
-}
-
-.contact-block a:focus,
-.contact-block a:hover {
-	color: var(--color-link);
-}
-
-.contact-block h6 {
-	margin-top   : 0;
-	margin-bottom: var(--vspace-0_125);
-}
-
-.contact-social {
-	margin-top: var(--vspace-0_375);
-}
-
-.contact-social svg path {
-	fill: var(--color-text);
-}
-
-.contact-list {
-	list-style : none;
-	margin-left: 0;
-}
-
-.contact-list li {
-	padding-left: 0;
 }
